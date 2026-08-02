@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="WindowTitle" xml:space="preserve"><value>Auto HDR Process Tool</value></data>
+  <data name="StatusInitializing" xml:space="preserve"><value>Initializing...</value></data>
+  <data name="FilterLabel" xml:space="preserve"><value>Filter</value></data>
+  <data name="RefreshButton" xml:space="preserve"><value>Refresh</value></data>
+  <data name="RefreshProcessListAccessibleName" xml:space="preserve"><value>Refresh process list</value></data>
+  <data name="ProcessColumn" xml:space="preserve"><value>Process</value></data>
+  <data name="PidColumn" xml:space="preserve"><value>PID</value></data>
+  <data name="AutoHdrColumn" xml:space="preserve"><value>Auto HDR</value></data>
+  <data name="ImagePathColumn" xml:space="preserve"><value>Image Path</value></data>
+  <data name="SelectedProcessGroup" xml:space="preserve"><value>Selected Process</value></data>
+  <data name="NameField" xml:space="preserve"><value>Name</value></data>
+  <data name="PathField" xml:space="preserve"><value>Path</value></data>
+  <data name="AutoHdrRuleGroup" xml:space="preserve"><value>Auto HDR Application Rule</value></data>
+  <data name="NoProcessSelected" xml:space="preserve"><value>No process selected</value></data>
+  <data name="Enable10BitBufferUpgrade" xml:space="preserve"><value>Also enable 10-bit buffer upgrade</value></data>
+  <data name="EnableAutoHdrButton" xml:space="preserve"><value>Enable Auto HDR</value></data>
+  <data name="RemoveRuleButton" xml:space="preserve"><value>Remove Rule</value></data>
+  <data name="RuleRestartHint" xml:space="preserve"><value>Rules use the full EXE path. Restart the target after first applying a rule.</value></data>
+  <data name="LiveIntensityGroup" xml:space="preserve"><value>Live Auto HDR Intensity</value></data>
+  <data name="CheckingSystemInterface" xml:space="preserve"><value>Checking system interface...</value></data>
+  <data name="ApplyCurrentProcessButton" xml:space="preserve"><value>Apply to Current Process</value></data>
+  <data name="ReadingProcessList" xml:space="preserve"><value>Reading process list...</value></data>
+  <data name="ProcessesRead" xml:space="preserve"><value>Found {0} processes</value></data>
+  <data name="RefreshProcessListFailed" xml:space="preserve"><value>Failed to refresh process list</value></data>
+  <data name="NotAvailableValue" xml:space="preserve"><value>-</value></data>
+  <data name="FullPathUnavailable" xml:space="preserve"><value>Unable to read the full EXE path</value></data>
+  <data name="StatusUnchecked" xml:space="preserve"><value>Unchecked</value></data>
+  <data name="StatusUnavailable" xml:space="preserve"><value>Unavailable</value></data>
+  <data name="StatusEnabled" xml:space="preserve"><value>Enabled</value></data>
+  <data name="StatusDisabled" xml:space="preserve"><value>Disabled</value></data>
+  <data name="StatusCheckFailed" xml:space="preserve"><value>Check failed</value></data>
+  <data name="RuleEnabledForExe" xml:space="preserve"><value>Enabled for this EXE</value></data>
+  <data name="RuleNotEnabledForExe" xml:space="preserve"><value>Not enabled for this EXE</value></data>
+  <data name="RuleReadFailed" xml:space="preserve"><value>Failed to read rule</value></data>
+  <data name="RuleReadError" xml:space="preserve"><value>Failed to read Auto HDR rule: {0}</value></data>
+  <data name="LiveIntensityReadError" xml:space="preserve"><value>Live intensity is unavailable for this process: {0}</value></data>
+  <data name="EnableAutoHdrFailed" xml:space="preserve"><value>Failed to enable Auto HDR</value></data>
+  <data name="RuleVerificationFailed" xml:space="preserve"><value>Auto HDR rule could not be verified after it was written.</value></data>
+  <data name="RuleSavedRestartRequired" xml:space="preserve"><value>Auto HDR rule was saved. Fully exit and restart the target process.</value></data>
+  <data name="RemoveRuleFailed" xml:space="preserve"><value>Failed to remove Auto HDR rule</value></data>
+  <data name="RuleStillEnabled" xml:space="preserve"><value>The rule is still enabled and may be managed by another setting.</value></data>
+  <data name="RuleRemovedRestartRequired" xml:space="preserve"><value>Auto HDR behavior managed by this tool was removed. Restart the target process.</value></data>
+  <data name="ApplyStrengthFailed" xml:space="preserve"><value>Failed to apply Auto HDR intensity</value></data>
+  <data name="StrengthSetStatus" xml:space="preserve"><value>Intensity was set to {0} through DirectX system interface.</value></data>
+  <data name="ProcessPathUnavailable" xml:space="preserve"><value>Unavailable (protected or exited)</value></data>
+  <data name="ErrorProcessExitedOrDenied" xml:space="preserve"><value>The process exited, or Windows denied access to its image path.</value></data>
+  <data name="ErrorPidReused" xml:space="preserve"><value>The PID now belongs to another process. Refresh the process list and try again.</value></data>
+  <data name="UnknownProcess" xml:space="preserve"><value>Unknown process</value></data>
+  <data name="ErrorOpenDirect3DProfile" xml:space="preserve"><value>Unable to open the current user's Direct3D configuration.</value></data>
+  <data name="ErrorCreateAutoHdrProfile" xml:space="preserve"><value>Unable to create Auto HDR application profile.</value></data>
+  <data name="ErrorExecutablePathRequired" xml:space="preserve"><value>An executable path is required.</value></data>
+  <data name="CapabilityX64Required" xml:space="preserve"><value>The intensity interface requires an x64 process.</value></data>
+  <data name="CapabilityHelperMissing" xml:space="preserve"><value>directxdatabasehelper.dll is unavailable on this system.</value></data>
+  <data name="CapabilityEntryPointsMissing" xml:space="preserve"><value>DirectX helper does not expose the required Auto HDR settings interface.</value></data>
+  <data name="CapabilityAvailable" xml:space="preserve"><value>Auto HDR intensity interface is available</value></data>
+  <data name="CapabilityAvailableVersion" xml:space="preserve"><value>Auto HDR intensity interface is available - {0}</value></data>
+  <data name="CapabilityLoadFailed" xml:space="preserve"><value>Unable to load DirectX helper: {0}</value></data>
+  <data name="ErrorReturnedStrengthOutOfRange" xml:space="preserve"><value>Windows returned an intensity value outside the 0-100 range.</value></data>
+  <data name="ErrorStrengthRange" xml:space="preserve"><value>Auto HDR intensity must be between 0 and 100.</value></data>
+  <data name="ErrorHelperRequiresX64" xml:space="preserve"><value>DirectX helper interface requires an x64 process.</value></data>
+  <data name="ErrorLoadSystemHelper" xml:space="preserve"><value>Unable to load directxdatabasehelper.dll from System32.</value></data>
+  <data name="ErrorHelperOrdinalMissing" xml:space="preserve"><value>Windows DirectX helper ordinal {0} is unavailable.</value></data>
+  <data name="ErrorOperationFailedHResult" xml:space="preserve"><value>{0} failed with HRESULT 0x{1}</value></data>
+</root>

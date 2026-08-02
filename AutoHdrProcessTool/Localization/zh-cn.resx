@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="WindowTitle" xml:space="preserve"><value>Auto HDR 进程工具</value></data>
+  <data name="StatusInitializing" xml:space="preserve"><value>正在初始化...</value></data>
+  <data name="FilterLabel" xml:space="preserve"><value>筛选</value></data>
+  <data name="RefreshButton" xml:space="preserve"><value>刷新</value></data>
+  <data name="RefreshProcessListAccessibleName" xml:space="preserve"><value>刷新进程列表</value></data>
+  <data name="ProcessColumn" xml:space="preserve"><value>进程</value></data>
+  <data name="PidColumn" xml:space="preserve"><value>PID</value></data>
+  <data name="AutoHdrColumn" xml:space="preserve"><value>Auto HDR</value></data>
+  <data name="ImagePathColumn" xml:space="preserve"><value>映像路径</value></data>
+  <data name="SelectedProcessGroup" xml:space="preserve"><value>所选进程</value></data>
+  <data name="NameField" xml:space="preserve"><value>名称</value></data>
+  <data name="PathField" xml:space="preserve"><value>路径</value></data>
+  <data name="AutoHdrRuleGroup" xml:space="preserve"><value>Auto HDR 应用规则</value></data>
+  <data name="NoProcessSelected" xml:space="preserve"><value>未选择进程</value></data>
+  <data name="Enable10BitBufferUpgrade" xml:space="preserve"><value>同时启用 10-bit 缓冲区升级</value></data>
+  <data name="EnableAutoHdrButton" xml:space="preserve"><value>启用 Auto HDR</value></data>
+  <data name="RemoveRuleButton" xml:space="preserve"><value>移除规则</value></data>
+  <data name="RuleRestartHint" xml:space="preserve"><value>规则按完整 EXE 路径保存，首次应用需要重启后生效</value></data>
+  <data name="LiveIntensityGroup" xml:space="preserve"><value>实时 Auto HDR 强度</value></data>
+  <data name="CheckingSystemInterface" xml:space="preserve"><value>正在检查系统接口...</value></data>
+  <data name="ApplyCurrentProcessButton" xml:space="preserve"><value>应用到当前进程</value></data>
+  <data name="ReadingProcessList" xml:space="preserve"><value>正在读取进程列表...</value></data>
+  <data name="ProcessesRead" xml:space="preserve"><value>已读取 {0} 个进程</value></data>
+  <data name="RefreshProcessListFailed" xml:space="preserve"><value>刷新进程列表失败</value></data>
+  <data name="NotAvailableValue" xml:space="preserve"><value>-</value></data>
+  <data name="FullPathUnavailable" xml:space="preserve"><value>无法读取完整 EXE 路径</value></data>
+  <data name="StatusUnchecked" xml:space="preserve"><value>未检查</value></data>
+  <data name="StatusUnavailable" xml:space="preserve"><value>不可用</value></data>
+  <data name="StatusEnabled" xml:space="preserve"><value>已启用</value></data>
+  <data name="StatusDisabled" xml:space="preserve"><value>未启用</value></data>
+  <data name="StatusCheckFailed" xml:space="preserve"><value>检查失败</value></data>
+  <data name="RuleEnabledForExe" xml:space="preserve"><value>已为此 EXE 启用</value></data>
+  <data name="RuleNotEnabledForExe" xml:space="preserve"><value>尚未为此 EXE 启用</value></data>
+  <data name="RuleReadFailed" xml:space="preserve"><value>读取规则失败</value></data>
+  <data name="RuleReadError" xml:space="preserve"><value>读取 Auto HDR 规则失败：{0}</value></data>
+  <data name="LiveIntensityReadError" xml:space="preserve"><value>该进程的实时强度暂不可读：{0}</value></data>
+  <data name="EnableAutoHdrFailed" xml:space="preserve"><value>启用 Auto HDR 失败</value></data>
+  <data name="RuleVerificationFailed" xml:space="preserve"><value>写入后未能读回有效的 Auto HDR 规则</value></data>
+  <data name="RuleSavedRestartRequired" xml:space="preserve"><value>Auto HDR 规则已保存，请完整退出并重新启动目标进程</value></data>
+  <data name="RemoveRuleFailed" xml:space="preserve"><value>移除 Auto HDR 规则失败</value></data>
+  <data name="RuleStillEnabled" xml:space="preserve"><value>规则仍处于启用状态，可能由其他配置项管理</value></data>
+  <data name="RuleRemovedRestartRequired" xml:space="preserve"><value>本工具管理的 Auto HDR 行为已移除，请重启目标进程</value></data>
+  <data name="ApplyStrengthFailed" xml:space="preserve"><value>应用 Auto HDR 强度失败</value></data>
+  <data name="StrengthSetStatus" xml:space="preserve"><value>已通过 Windows DirectX 系统接口将强度设为 {0}</value></data>
+  <data name="ProcessPathUnavailable" xml:space="preserve"><value>无法读取（受保护或已退出）</value></data>
+  <data name="ErrorProcessExitedOrDenied" xml:space="preserve"><value>进程已退出，或系统不允许查询其映像路径</value></data>
+  <data name="ErrorPidReused" xml:space="preserve"><value>该 PID 已被其他进程复用，请刷新进程列表后重试</value></data>
+  <data name="UnknownProcess" xml:space="preserve"><value>未知进程</value></data>
+  <data name="ErrorOpenDirect3DProfile" xml:space="preserve"><value>无法打开当前用户的 Direct3D 配置</value></data>
+  <data name="ErrorCreateAutoHdrProfile" xml:space="preserve"><value>无法创建 Auto HDR 应用配置</value></data>
+  <data name="ErrorExecutablePathRequired" xml:space="preserve"><value>需要可执行文件路径</value></data>
+  <data name="CapabilityX64Required" xml:space="preserve"><value>强度接口要求使用 x64 进程</value></data>
+  <data name="CapabilityHelperMissing" xml:space="preserve"><value>系统中没有 directxdatabasehelper.dll</value></data>
+  <data name="CapabilityEntryPointsMissing" xml:space="preserve"><value>系统 DirectX 助手不包含所需的 Auto HDR 配置接口</value></data>
+  <data name="CapabilityAvailable" xml:space="preserve"><value>系统强度接口可用</value></data>
+  <data name="CapabilityAvailableVersion" xml:space="preserve"><value>系统强度接口可用 - {0}</value></data>
+  <data name="CapabilityLoadFailed" xml:space="preserve"><value>无法加载系统 DirectX 助手：{0}</value></data>
+  <data name="ErrorReturnedStrengthOutOfRange" xml:space="preserve"><value>系统返回了超出 0-100 范围的强度值</value></data>
+  <data name="ErrorStrengthRange" xml:space="preserve"><value>Auto HDR 强度必须在 0 到 100 之间</value></data>
+  <data name="ErrorHelperRequiresX64" xml:space="preserve"><value>系统 DirectX 助手接口要求 x64 进程</value></data>
+  <data name="ErrorLoadSystemHelper" xml:space="preserve"><value>无法从 System32 加载 directxdatabasehelper.dll</value></data>
+  <data name="ErrorHelperOrdinalMissing" xml:space="preserve"><value>系统 DirectX 助手中不存在序号 {0}</value></data>
+  <data name="ErrorOperationFailedHResult" xml:space="preserve"><value>{0} 失败，HRESULT 0x{1}</value></data>
+</root>
