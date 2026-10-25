@@ -8,6 +8,7 @@
 <a href="#build-from-source"><img src="https://img.shields.io/badge/.NET%20Framework-4.8-512BD4" alt=".NET Framework 4.8" /></a>
 <a href="#build-from-source"><img src="https://img.shields.io/badge/UI-WinForms-7A3E9D" alt="Windows Forms" /></a>
 <br />
+<a href="https://github.com/shizuku30/AutoHdrProcessTool/actions/workflows/ci.yml"><img src="https://github.com/shizuku30/AutoHdrProcessTool/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI" /></a>
 <a href="#compatibility-and-limitations"><img src="https://img.shields.io/badge/architecture-x64-455A64" alt="x64" /></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-0BSD-2E7D32" alt="0BSD License" /></a>
 
@@ -105,6 +106,18 @@ msbuild .\AutoHdrProcessTool.sln `
 ```
 
 The project has no NuGet package dependencies. It must remain x64 with `Prefer32Bit` disabled because the Windows DirectX helper is invoked from a 64-bit process.
+
+## Automated Tests
+
+After building the Release x64 configuration, run the same checks used by CI:
+
+```powershell
+pwsh -NoProfile -File .\tests\Run-Tests.ps1 `
+  -Configuration Release `
+  -Platform x64
+```
+
+The test suite validates localization resources and language selection, Auto HDR behavior merging, binary architecture and version metadata, and the absence of process-memory or injection APIs.
 
 ## Contributing
 

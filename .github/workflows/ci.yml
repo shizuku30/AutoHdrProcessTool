@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build and test (Windows x64)
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Add MSBuild to PATH
+        uses: microsoft/setup-msbuild@30375c66a4eea26614e0d39710365f22f8b0af57 # v3.0.0
+
+      - name: Build Release x64
+        run: >-
+          msbuild AutoHdrProcessTool.sln
+          /m
+          /t:Rebuild
+          /p:Configuration=Release
+          /p:Platform=x64
+
+      - name: Run automated tests
+        shell: pwsh
+        run: >-
+          ./tests/Run-Tests.ps1
+          -Configuration Release
+          -Platform x64
+
+      - name: Stage build artifact
+        shell: pwsh
+        run: |
+          $stage = 'artifacts/ci/AutoHdrProcessTool'
+          New-Item -ItemType Directory -Path $stage -Force | Out-Null
+          Copy-Item 'AutoHdrProcessTool/bin/x64/Release/AutoHdrProcessTool.exe' $stage
+          Copy-Item 'AutoHdrProcessTool/bin/x64/Release/AutoHdrProcessTool.exe.config' $stage
+          Copy-Item 'README.md', 'LICENSE' $stage
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: AutoHdrProcessTool-win-x64
+          path: artifacts/ci/AutoHdrProcessTool
+          if-no-files-found: error
+          retention-days: 14
+
